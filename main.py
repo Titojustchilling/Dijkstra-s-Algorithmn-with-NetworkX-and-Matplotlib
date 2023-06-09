@@ -38,7 +38,6 @@ labels = nx.get_edge_attributes(G, 'weight')
 nx.draw(G, pos, with_labels=True, node_color='red', node_size=800)
 nx.draw_networkx_edge_labels(G, pos, edge_labels=labels)
 
-#path_edges = list(zip(shortest, shortest[1:]))
 path_edges = shortest[1:]
 nx.draw_networkx_edges(G, pos, edgelist=path_edges, edge_color='black', width=2)
 
